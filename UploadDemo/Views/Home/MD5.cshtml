@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "MD5";
+}
+
+<div class="jumbotron">
+    <h1>Html5 Upload File</h1>
+    <p class="lead">MD5 Server File </p>
+</div>
+
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <h3 class="panel-heading">Html5 Upload File MD5</h3>
+        <div class="well-lg">
+            <img src="@Url.Content("~/Content/img/60.jpeg")" style="max-width:100%" />
+            <br />MD5<br />
+            Strart: @DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.ffffff") <br />
+            @Helper.GetFileMD5(Server.MapPath("~/Content/img/60.jpeg")) <br />
+            End: @DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.ffffff")
+        </div>
+    </div>
+    <div class="panel-footer"></div>
+</div>

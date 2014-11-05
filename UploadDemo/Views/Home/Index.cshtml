@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Form Upload";
+}
+
+<div class="jumbotron">
+    <h1>Form Upload File</h1>
+    <p class="lead">multipart/form-data  <a href="http://www.ietf.org/rfc/rfc2388.txt">http://www.ietf.org/rfc/rfc2388.txt</a> </p>
+    <p class="lead">application/x-www-form-urlencoded  <a href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1">http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1</a> </p>
+</div>
+
+<div class="container">
+    <form method="post" enctype="multipart/form-data" action="/Home/Index">
+        <div class="form-group">
+            <input id="file-1" name="file-1" type="file" style="display:inline-block"> <input type="submit" class="btn btn-primary" value="Submit" />
+        </div>
+    </form>
+</div>
+
+@section scripts{
+<script type="text/javascript">
+    $(document).ready(function () {
+    });
+</script>
+}

@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A11CD067-CE86-4D65-AF79-3BCF8562E81B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UploadDemo</RootNamespace>
+    <AssemblyName>UploadDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Code\Helper.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\img\60.jpeg" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fileinput.min.css" />
+    <Content Include="Content\img\loading.gif" />
+    <Content Include="Content\img\swfButton.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="H5Webuploader\ajax-upload.html" />
+    <Content Include="H5Webuploader\compress_result1.png" />
+    <Content Include="H5Webuploader\compress_result2.png" />
+    <Content Include="H5Webuploader\file-api.html" />
+    <Content Include="H5Webuploader\hash\hashFile.html" />
+    <Content Include="H5Webuploader\hash\md5.js" />
+    <Content Include="H5Webuploader\hash\md5File.html" />
+    <Content Include="H5Webuploader\hash\md5File.js" />
+    <Content Include="H5Webuploader\hash\md5WorkerFile.html" />
+    <Content Include="H5Webuploader\jpgjs\index.html" />
+    <Content Include="H5Webuploader\jpgjs\jpeg_encoder_basic.js" />
+    <Content Include="H5Webuploader\jpgjs\jpg.js" />
+    <Content Include="H5Webuploader\libs\bs\bootstrap.min.css" />
+    <Content Include="H5Webuploader\libs\jquery.min.js" />
+    <Content Include="H5Webuploader\libs\zip\deflate.js" />
+    <Content Include="H5Webuploader\libs\zip\inflate.js" />
+    <Content Include="H5Webuploader\libs\zip\zip.js" />
+    <Content Include="H5Webuploader\md5\arraybuffer.html" />
+    <Content Include="H5Webuploader\md5\fast_md5.js" />
+    <Content Include="H5Webuploader\md5\iframe.html" />
+    <Content Include="H5Webuploader\md5\index.html" />
+    <Content Include="H5Webuploader\md5\jkm_md5.js" />
+    <Content Include="H5Webuploader\md5\jkm_md5_arraybuffer.js" />
+    <Content Include="H5Webuploader\md5\SparkMD5.js" />
+    <Content Include="H5Webuploader\md5\subpage.html" />
+    <Content Include="H5Webuploader\md5\work.js" />
+    <Content Include="H5Webuploader\md5\worker.html" />
+    <Content Include="H5Webuploader\md5\xhr.html" />
+    <Content Include="H5Webuploader\multiple-select.html" />
+    <Content Include="H5Webuploader\pdfpreview\index.html" />
+    <Content Include="H5Webuploader\pdfpreview\pdf.js" />
+    <Content Include="H5Webuploader\pdfpreview\pdf.worker.js" />
+    <Content Include="H5Webuploader\performance\compress.html" />
+    <Content Include="H5Webuploader\performance\compressed\html5vsflash\flash-90.jpg" />
+    <Content Include="H5Webuploader\performance\compressed\html5vsflash\html5-100.jpeg" />
+    <Content Include="H5Webuploader\performance\compressed\html5vsflash\html5-90.jpeg" />
+    <Content Include="H5Webuploader\performance\compressed\html5vsflash\original.jpg" />
+    <Content Include="H5Webuploader\performance\compressed\html5\100.jpeg" />
+    <Content Include="H5Webuploader\performance\compressed\html5\50.jpeg" />
+    <Content Include="H5Webuploader\performance\compressed\html5\60.jpeg" />
+    <Content Include="H5Webuploader\performance\compressed\html5\70.jpeg" />
+    <Content Include="H5Webuploader\performance\compressed\html5\80.jpeg" />
+    <Content Include="H5Webuploader\performance\compressed\html5\90.jpeg" />
+    <Content Include="H5Webuploader\performance\preview.html" />
+    <Content Include="H5Webuploader\performance\resize_worker.js" />
+    <Content Include="H5Webuploader\preview_result.png" />
+    <Content Include="H5Webuploader\server\files\sprites.jpg" />
+    <Content Include="H5Webuploader\size_statistic.png" />
+    <Content Include="H5Webuploader\sprites\canvas-to-blob.js" />
+    <Content Include="H5Webuploader\sprites\index.html" />
+    <Content Include="H5Webuploader\sprites\spriter.js" />
+    <Content Include="H5Webuploader\zip\2G.png" />
+    <Content Include="H5Webuploader\zip\3G.png" />
+    <Content Include="H5Webuploader\zip\index.html" />
+    <Content Include="H5Webuploader\zip\WIFI.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="H5Webuploader\compress.xlsx" />
+    <Content Include="H5Webuploader\hash\README.md" />
+    <Content Include="H5Webuploader\hash\test.php" />
+    <Content Include="H5Webuploader\jpgjs\README.md" />
+    <Content Include="H5Webuploader\performance\speed\请求数与上传速度的关系.xlsx" />
+    <Content Include="H5Webuploader\preview.xlsx" />
+    <Content Include="H5Webuploader\README.md" />
+    <Content Include="H5Webuploader\server\upload_file.php" />
+    <Content Include="H5Webuploader\size_statistics.xlsx" />
+    <Content Include="H5Webuploader\sprites\README.md" />
+    <Content Include="H5Webuploader\zip\data.xlsx" />
+    <Content Include="H5Webuploader\zip\README.md" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\fileinput.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\SWFUpload\Flash\obj\SWFUpload-v2Config.xml" />
+    <Content Include="Scripts\SWFUpload\Flash\swfupload.swf" />
+    <Content Include="Scripts\SWFUpload\jquery.swfupload.js" />
+    <Content Include="Scripts\SWFUpload\plugins\SWFObject License.txt" />
+    <Content Include="Scripts\SWFUpload\plugins\swfupload.cookies.js" />
+    <Content Include="Scripts\SWFUpload\plugins\swfupload.queue.js" />
+    <Content Include="Scripts\SWFUpload\plugins\swfupload.speed.js" />
+    <Content Include="Scripts\SWFUpload\plugins\swfupload.swfobject.js" />
+    <Content Include="Scripts\SWFUpload\swfupload.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\Beauty.cshtml" />
+    <Content Include="Views\Home\Flash.cshtml" />
+    <Content Include="Scripts\SWFUpload\Flash\deploy.bat" />
+    <Content Include="Scripts\SWFUpload\Flash\ExternalCall.as" />
+    <Content Include="Scripts\SWFUpload\Flash\FileItem.as" />
+    <Content Include="Scripts\SWFUpload\Flash\obj\SWFUpload-v2Config.old" />
+    <Content Include="Scripts\SWFUpload\Flash\SWFUpload v2.as3proj" />
+    <Content Include="Scripts\SWFUpload\Flash\SWFUpload.as" />
+    <Content Include="Views\Home\Html5.cshtml" />
+    <Content Include="Views\Home\MD5.cshtml" />
+    <Content Include="Views\Home\Base64.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10498</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10498/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
